@@ -1,13 +1,39 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
+const scores = [
+  {
+    name: 'Mohammad Salah',
+    score: 50,
 
-  // lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-  return element;
-}
+  },
+  {
+    name: 'Virgil Vandick',
+    score: 70,
 
-document.body.appendChild(component());
+  },
+  {
+    name: 'Diago Jota',
+    score: 60,
+
+  },
+  {
+    name: 'Sadio Mane',
+    score: 45,
+
+  },
+  {
+    name: 'Roberto Firmino',
+    score: 25,
+
+  },
+];
+let scoreData = '';
+scores.forEach((score) => {
+  scoreData += `
+     <li class="score-values">${score.name} : ${score.score}</li>
+  `;
+});
+const scoresEl = document.querySelector('.scores');
+
+scoresEl.innerHTML = scoreData;
