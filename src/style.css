@@ -8,6 +8,7 @@
 
 body {
   font-family: monospace, Varela;
+  color: #000;
 }
 
 .copyright {
@@ -44,6 +45,9 @@ form {
 form input {
   padding: 10px;
   outline: none;
+  border: 2px solid black;
+  color: #000;
+  font-weight: bold;
 }
 
 form button {
