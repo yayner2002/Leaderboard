@@ -1,62 +1,44 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# LeaderBoard
 
-# Project Name
-
-> Description the project.
-
-
+> A JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules.
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JavaScript
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://yayner2002.github.io/Leaderboard/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**To get a local copy up clone the repo or download the full souce code**
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
+clone the repo first using the following command:
+git clone https://github.com/yayner2002/Leaderboard.git
+then run the following commands:
+  cd leaderboard
+  npm install
+  npm start
 ## Authors
 
-👤 **Author1**
+👤 **yayner**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@yayner2002](https://github.com/yayner2002)
+- Twitter: [@wediagazian](https://twitter.com/wediagazian)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/yaynshet-medhin)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/yayner2002/Leaderboard/issues).
 
 ## Show your support
 
