@@ -14,7 +14,8 @@ body {
 .copyright {
   display: flex;
   justify-content: space-between;
-  margin-top: 100vh;
+  margin-top: 10%;
+  flex-wrap: wrap;
 }
 
 .contents {
@@ -31,15 +32,16 @@ body {
 }
 
 .add-scores {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-top: 7px;
+  margin-top: 23px;
+  padding: 10px;
 }
 
 form input {
@@ -50,8 +52,8 @@ form input {
   font-weight: bold;
 }
 
-form button {
-  width: 20%;
+#submitBtn {
+  min-width: 20%;
   align-self: flex-end;
 }
 
@@ -78,7 +80,23 @@ form button {
 }
 
 .list-of-scores {
-  border: 2px solid black;
   padding: 5px;
   margin-top: 20px;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+li:nth-child(odd) {
+  background-color: #c1c1c1;
+}
+
+#scores {
+  max-height: 400px;
+  overflow: auto;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
 }

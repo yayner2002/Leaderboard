@@ -7,7 +7,7 @@
 - CSS
 - JavaScript
 ## Screenshot
-![home page](app_screenshot.png?raw=true "app screenshot")
+![home page](app_screenshotn.png?raw=true "app screenshot")
 ## Live Demo
 
 [Live Demo Link](https://yayner2002.github.io/Leaderboard/)
