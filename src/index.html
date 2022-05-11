@@ -12,18 +12,18 @@
             <div class="recent-scores">
                 <div class="recent-scores-header">
                     <h2>Recent Scores</h2>
-                    <button type="button" class="button">Refresh</button>
+                    <button type="button" class="button" id="refresh">Refresh</button>
                 </div>
                 <div class="list-of-scores">
-                    <div class="scores"></div>
+                    <div id="scores"></div>
                 </div>
             </div>
             <div class="add-scores">
                 <h3>Add Your Score</h3>
-                <form action="#">
+                <form action="#" id="my-form">
                     <input type="text" class="form-control" placeholder="Your Name" id="nameEl" required>
                     <input type="number" id="scoreEl" placeholder="Your Score" class="form-control" required>
-                    <button type="submit" class="button">Submit</button>
+                    <input type="submit" class="button" id="submitBtn">
                 </form>
             </div>
         </div>
