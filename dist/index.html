@@ -6,36 +6,47 @@
     <title>LeaderBoard</title>
 <script defer src="main.js"></script></head>
 <body>
-    <div class="container">
-        <h1>LeaderBoard</h1>
-        <div class="contents">
-            <div class="recent-scores">
-                <div class="recent-scores-header">
-                    <h2>Recent Scores</h2>
-                    <button type="button" class="button" id="refresh">Refresh</button>
+        <div class="container">
+            <div class="nav">
+                <div class="nav-logo">
+                    <h1>LeaderBoard</h1>
                 </div>
-                <div class="list-of-scores">
-                    <div id="scores"></div>
+                <div class="nav-menu">
+                    <ul class="nav-items">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="add-scores">
-                <h3>Add Your Score</h3>
-                <form action="#" id="my-form">
-                    <input type="text" class="form-control" placeholder="Your Name" id="nameEl" required>
-                    <input type="number" id="scoreEl" placeholder="Your Score" class="form-control" required>
-                    <input type="submit" class="button" id="submitBtn">
-                </form>
+            <div class="contents">
+                <div class="recent-scores">
+                    <div class="recent-scores-header">
+                        <h2>Recent Scores</h2>
+                        <button type="button" class="button" id="refresh">Refresh</button>
+                    </div>
+                    <div class="list-of-scores">
+                        <div id="scores"></div>
+                    </div>
+                </div>
+                <div class="add-scores">
+                    <h3>Add Your Score</h3>
+                    <form action="#" id="my-form">
+                        <input type="text" class="form-control" placeholder="Your Name" id="nameEl" required>
+                        <input type="number" id="scoreEl" placeholder="Your Score" class="form-control" required>
+                        <input type="submit" class="button" id="submitBtn">
+                    </form>
+                </div>
             </div>
+            <footer class="copyright">
+                <div class="foot-left">
+                    <p>Copyrght &copy; 2022 GeezTech, All Rights Reserved.</p>
+                </div>
+                  <div class="foot-right">
+                    <p>Made With 💗 by GeezTech Systems</p>
+                </div> 
+              </footer>
         </div>
-        <footer class="copyright">
-            <div class="foot-left">
-                <p>Copyrght &copy; 2022 GeezTech, All Rights Reserved.</p>
-            </div>
-              <div class="foot-right">
-                <p>Made With 💗 by GeezTech Systems</p>
-            </div> 
-          </footer>
-    </div>
 
 </body>
 </html>

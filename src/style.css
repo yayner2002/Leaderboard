@@ -3,12 +3,16 @@
 .container {
   width: 80%;
   margin: auto;
-  margin-top: 5%;
 }
 
 body {
   font-family: monospace, Varela;
-  color: #000;
+  color: #fff;
+  background: linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0.75)), url('../images/banner.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
 }
 
 .copyright {
@@ -40,29 +44,49 @@ form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-top: 23px;
+  margin-top: 10px;
   padding: 10px;
 }
 
 form input {
   padding: 10px;
   outline: none;
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0);
   color: #000;
   font-weight: bold;
+  background-color: rgba(230, 221, 221, 0.973);
+  border-radius: 10px;
+}
+
+form input:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+form input:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
 }
 
 #submitBtn {
-  min-width: 20%;
-  align-self: flex-end;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #ec5242;
+  color: #fff;
+  outline: none;
+  border: none;
 }
 
-.button {
-  background-color: #fff;
-  padding: 2px 10px;
-  cursor: pointer;
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
+#refresh {
+  align-self: flex-end;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #ec5242;
+  color: #fff;
+  outline: none;
+  border: none;
 }
 
 .score-values {
@@ -73,10 +97,26 @@ form input {
 
 .score-values:nth-child(odd) {
   background-color: #c1c1c1;
+  color: #000;
 }
 
 .add-scores h3 {
   text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+.add-scores h3::after {
+  background: #ec5242;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  border-radius: 15px;
+  width: 70px;
+  height: 4px;
+  transform: translateX(-50%);
 }
 
 .list-of-scores {
@@ -84,19 +124,60 @@ form input {
   margin-top: 20px;
 }
 
-li {
+.nav-items li {
+  position: relative;
+  margin-left: 20px;
+}
+
+#scores li {
   list-style: none;
   padding: 5px;
 }
 
-li:nth-child(odd) {
+#scores li:nth-child(odd) {
   background-color: #c1c1c1;
+  color: #000;
 }
 
 #scores {
   max-height: 400px;
   overflow: auto;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 2px solid #fff;
   padding: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-items li::after {
+  content: '';
+  width: 0;
+  background: coral;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.nav-items li:hover::after {
+  width: 100%;
 }
