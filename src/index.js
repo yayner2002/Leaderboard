@@ -1,4 +1,3 @@
-// import _ from 'lodash';
 import './style.css';
 
 const nameInputEl = document.getElementById('nameEl');
